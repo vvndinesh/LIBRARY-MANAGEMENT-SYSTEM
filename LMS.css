@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+
+html {
+    display: block;
+    color: -internal-root-color;
+}
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	background-color: #f1f3f4;
+	font-family:sans-serif;
+}
+.top-nav-bar
+{
+	height:57px;
+	top:0;
+	position: sticky;
+	background:#fff;
+	margin-bottom: 20px;
+	border-bottom: 3px solid orange;
+	z-index:2; 
+}
+.logo
+{
+	width: 100px;
+	height:40px;
+	margin: 5px 10px;
+	padding-right:10px;
+	margin-right: 10px;
+}
+.form-control{
+	margin-top: 9px;
+	margin-left: 30px;
+	border:1px solid orange !important;
+	border-top-left-radius: 20px !important;
+	border-bottom-left-radius: 20px !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	box-shadow: none !important; 
+}
+.input-group-text
+{
+	background:orange !important;
+	border:1px solid orange !important;
+	margin: 8.5px 10px 3px 0;
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+	border-top-right-radius: 20px !important;
+	border-bottom-right-radius: 20px !important;
+	cursor:pointer;
+}
+.search-box
+{
+	display: inline-flex;
+	float: center;
+	width: 60%
+
+
+}
+.input-group-text img
+{
+height:15px;
+width: 15px;
+
+}
+
+.menu-bar
+{
+	width:40%;
+	height: 57px;
+	float:right;
+
+}
+
+.menu-bar ul
+{
+	display: inline-flex;
+	float: right; 
+}
+
+.menu-bar ul li
+{
+	border-left: 1px solid #fff;
+	list-style-type: none;
+	padding: 15px 35px;
+	text-align:center;
+	background-color: orange;
+	cursor:pointer;
+}
+
+.menu-bar ul li a
+{
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+.fa-shopping-basket
+{
+	margin-right: 5px;
+}
+@media only screen and (max-width: 980px)
+{
+	.top-nav-bar
+	{
+		height: 118px;
+		border-bottom: 0;
+	}
+
+	.search-box
+	{
+		width:100%;
+	}
+    .menu-bar
+    {
+    	width:100%;
+    }
+    .menu-bar ul
+    {
+    	margin: 10px 0;
+    	width:100%;
+    }
+    .menu-bar ul li
+    {
+    	height:57px; 
+    	width:100%;
+
+    }
+}
+.side-menu
+{
+	height: 79%;
+	width: 15%;
+	font-size: 14px;
+	float: left;
+	z-index: 2;
+	background-color: #ddd; 
+}
+.side-menu ul
+{
+	margin-left: 10px;
+}
+.side-menu ul li
+{
+	list-style-type: none;
+	font-weight: bold;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.side-menu ul li:hover
+{
+	color: black;
+}
+.side-menu ul li a
+{
+   text-decoration: none;
+   color: black;
+}
+.side-menu ul li ul
+{
+	display: none;
+	z-index: 10;
+	top: 77px;
+}
+@media only screen and (max-width: 980px)
+{
+	.side-menu
+	{
+		width:34%;
+		z-index: 20;
+		top: 133px;
+		position: fixed;
+		font-size:12px;
+	}
+	.side-menu ul li ul
+	{
+		top: 133px;
+	}
+	.side-menu ul li:hover ul
+	{
+		margin-left: 30%;
+	}
+}
+
+.slider
+{
+	width:85%;
+	margin-left: 15%;
+	padding: 0 10px;
+}
+.carousel
+{
+	box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+
+}
+
+.carousel-indicators
+{
+	z-index: 1 !important;
+}
+@media only screen and (max-width: 980px)
+{
+	.sider
+	{
+		width:100%;
+	}
+}
+.featured-categories
+{
+margin: 50px 0;
+}
+.featured-categories img
+{
+	width: 100%;
+	padding: 20px 0;
+	transition:1s;
+	cursor: pointer; 
+
+}
+.featured-categories img:hover
+{
+	transform: scale(1.1);
+}
+.title-box
+{
+	background-color: orange;
+	color: #fff;
+	width: 180px;
+	padding: 4px 10px;
+	height: 40px;
+	margin-bottom: 30px;
+	display: flex;
+}
+.title-box h2
+{
+	font-size: 24px;
+}
+.title-box::after
+{
+	content: '';
+	border-top:40px solid orange;
+	border-right: 50px solid transparent;
+	position: absolute;
+	display: flex;
+	margin-top: -4px;
+	margin-left: 170px;
+}
+.website-features
+{
+	margin:60px 0; 
+}
+.website-features img
+{
+	width: 43%;
+}
+.footer
+{
+	margin-top: 50px;
+	background:#000;
+	color: #fff; 
+}
+.footer h1
+{
+	font-size: 15px;
+	margin: 25px 0; 
+}
+.footer p
+{
+	font-size: 12px; 
+}
+.copyright
+{
+	margin-bottom: -80px;
+	text-align: center;
+	font-size: 15px;
+	padding-bottom: 20px;
+}
+.footer hr
+{
+	margin-top: 10px;
+	background-color: #ccc;
+}
+.containers
+{
+	text-align: center;
+	position: absolute;
+	width: 100%
+}
+.container span
+{
+	text-transform: uppercase;
+	display: block;
+}
+.text1
+{
+	font-size: 60px;
+	font-weight: 700;
+	letter-spacing: 8px;
+	margin-bottom: 20px;
+	background:white;
+	position: relative;
+	animation: text 3s 1; 
+}
+.text2
+{
+	font-size: 30px;
+	color: #6ab04c;
+}
+@keyframes text{
+	0%{
+		color: white;
+		margin-bottom: -40px;
+	}
+	30%{
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+	}
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+	}
+}
